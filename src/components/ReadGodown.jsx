@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './ReadGodown.css'; // Assuming you have a CSS file for styles
 
 const ReadGodown = () => {
@@ -43,10 +44,14 @@ const ReadGodown = () => {
         <div className="container mt-5">
 
             <div className="card">
-                <label htmlFor="" style={{ fontSize: '10px', marginTop: 1, textAlign: 'center', fontWeight: 'bold' }}>Welcome To</label>
+                <Link to='/edit' style={{ textDecoration: 'none' }}>
+    <label htmlFor="" style={{ fontSize: '10px', marginTop: 1, textAlign: 'center', fontWeight: 'bold', display: 'block' }}>
+        Welcome To
+    </label>
+</Link>
                 <div className="card-body">
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                        <h2 className="text-primary fw-bold" style={{ fontSize: '18px' }}>
+                        <h2 className="text-primary fw-bold" style={{ fontSize: '20px' }}>
                             SRI JAYAJOTHI AND COMPANY PRIVATE LIMITED
                         </h2>
                         <img src="/images/sjjmlogo.jpg" alt="" style={{ height: '60px', width: '60px' }} />
