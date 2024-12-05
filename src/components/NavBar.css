@@ -1,0 +1,29 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* 50% of the viewport height */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .navbar-list li {
+    margin: 10px 0; /* Space between list items */
+  }
+  
+  .navbar-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007bff; /* Bootstrap's primary blue color */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-list a:hover {
+    color: #0056b3; /* Darker blue for hover effect */
+  }
+  
